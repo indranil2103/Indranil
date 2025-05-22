@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indranil Ghosh | Teacher & Learner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #ffff;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 5px;
+    }
+
+    .download-cv {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 5px 10px;
+    }
+
+    nav a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      font-size: 1.8em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+
+    .courses, .downloads {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2980b9;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      background-color: #219150;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #2ecc71;
+      color: white;
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #27ae60;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      margin: 0 10px;
+      color: white;
+    }
+
+    footer a:hover {
+      color: #1abc9c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="photo.jpg" alt="Profile Photo" />
+    <h1>Indranil Ghosh</h1>
+    <p><i class="fas fa-chalkboard-teacher"></i> Teacher & Lifelong Learner</p>
+    <a class="download-cv" href="indranilghosh.pdf" download><i class="fas fa-download"></i> Download CV</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#learning">Learning</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I’m Indranil Ghosh, a Mathematics teacher and a passionate learner. I love breaking down complex ideas to make them easier to understand, and I’m always striving to grow—both as a mentor and as a student. I completed my graduation from Ramakrishna Mission Vivekananda Centenary College and am currently pursuing an M.Sc. in Mathematics from Indian Institute of Science Education and Research Kolkata.</p>
+    </section>
+
+    <section id="teaching" class="section">
+      <h2>Courses I Teach</h2>
+      <div class="courses">
+        <div class="card">
+          <h3>Mathematics(Class XI & XII)</h3>
+          <p>Concept-driven lectures, numerical practice, and board-level preparation with weekly tests.</p>
+        </div>
+        <div class="card">
+          <h3>B.Sc Mathematics</h3>
+          <p>B.Sc Mathematics Courses(University level+JAM).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="learning" class="section">
+      <h2>Courses I'm Learning</h2>
+      <div class="courses">
+        <div class="card">
+          <h3>Commutative Algebra</h3>
+          <p>Commutative Algebra is a foundational area in mathematics with deep connections to algebraic geometry, number theory., and algebraic topology.</p>
+        </div>
+        <div class="card">
+          <h3>Algebraic Geometry</h3>
+          <p>Algebraic Geometry is a rich and deep field that studies solutions to polynomial equations using techniques from both algebra and geometry.</p>
+        </div>
+      </div>
+    </section>
+
+   <section id="downloads" class="section">
+      <h2>Notes & Assignments</h2>
+      <div class="downloads">
+        <div class="card">
+          <h3>Mathematics notes</h3>
+          <p>Complete Class 12 mathematics short notes with formulas.</p>
+          <a href="notes/physics_notes.pdf" download><i class="fas fa-download"></i> Download</a>
+        </div>
+        <div class="card">
+          <h3>Assignment 1</h3>
+          <p>MCQ + Conceptual Questions from Group Theory.</p>
+          <a href="notes/assignment_1.pdf" download><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Indranil Ghosh| Designed by Indranil</p>
+    <div style="margin-top: 10px;">
+      <a href="https://www.facebook.com/indranil.ghosh.508995" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="https://www.instagram.com/indranil2103/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="https://wa.me/919064339941" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
