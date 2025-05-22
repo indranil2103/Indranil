@@ -194,6 +194,7 @@
     <a href="#learning">Learning</a>
     <a href="#downloads">Downloads</a>
     <a href="#contact">Contact</a>
+    <a href="#private">Private</a>
   </nav>
 
   <div class="container">
@@ -246,6 +247,25 @@
         </div>
       </div>
     </section>
+<section id="private" class="section">
+  <h2>Private Resources</h2>
+
+  <div id="loginBox" class="card">
+    <h3>Login to Access</h3>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="checkLogin()">Login</button>
+    <p id="loginMsg" style="color: red;"></p>
+  </div>
+
+  <div id="privateContent" class="card" style="display: none;">
+    <h3>Confidential Notes</h3>
+    <p>These are private teaching materials only for verified users.</p>
+    <a href="notes/private_material.pdf" download><i class="fas fa-download"></i> Download</a>
+    <br><br>
+    <button onclick="logout()">Logout</button>
+  </div>
+</section>
 
     <section id="contact" class="section">
       <h2>Contact Me</h2>
@@ -266,6 +286,31 @@
       <a href="https://wa.me/919064339941" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
     </div>
   </footer>
+<script>
+  const VALID_USER = "teacher";
+  const VALID_PASS = "12345";
+
+  function checkLogin() {
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+    const msg = document.getElementById("loginMsg");
+
+    if (user === VALID_USER && pass === VALID_PASS) {
+      document.getElementById("loginBox").style.display = "none";
+      document.getElementById("privateContent").style.display = "block";
+      msg.textContent = "";
+    } else {
+      msg.textContent = "Invalid credentials. Please try again.";
+    }
+  }
+
+  function logout() {
+    document.getElementById("loginBox").style.display = "block";
+    document.getElementById("privateContent").style.display = "none";
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+  }
+</script>
 
 </body>
 </html>
